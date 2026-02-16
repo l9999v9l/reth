@@ -1,5 +1,15 @@
 # reth
 
+# Forking the Heart of the Institutional Stack
+git clone https://github.com/paradigmxyz/reth.git && cd reth
+git checkout -b feature/new-moon-fhe-precompile
+
+# Embedding the Warden Checksum for Institutional Grade Verification
+# We use Warden SPEx to sign the commit, ensuring it is "Untouchable"
+git config user.signingkey <WARDEN_AGENT_ID>
+git commit -S -m "feat: integrate Zama fhEVM precompiles for VPU-accelerated parallel state"
+
+
 [![bench status](https://github.com/paradigmxyz/reth/actions/workflows/bench.yml/badge.svg)](https://github.com/paradigmxyz/reth/actions/workflows/bench.yml)
 [![CI status](https://github.com/paradigmxyz/reth/workflows/unit/badge.svg)][gh-ci]
 [![cargo-lint status](https://github.com/paradigmxyz/reth/actions/workflows/lint.yml/badge.svg)][gh-lint]
